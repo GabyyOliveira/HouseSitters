@@ -1,0 +1,162 @@
+/* Importando a fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+/* o "*" seria como um seletor global, para toda a página */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+/* estilização do body  */
+body{
+    /* width e height definem  a largura e altura do body*/
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(rgba(95, 66, 134, 0.75),rgba(0,0,0,0.75)), url(Imagens/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*Estilização do meu navbar9menu de navegação*/
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* estilização da logo */
+.logo{
+    width: 300px;
+    cursor: pointer;/*o cursor especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento.Aqui defini o cursor pointer, que seria uma mão*/
+}
+/* Estilização do menu de navegação */
+.navbar ul li{
+    list-style: none;/*definindo a estilização da nav, ou seja, não quero nenhuma estilização*/
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+/* estilização dos links */
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: z;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    color: white;
+}
+.container p{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 100px ;
+}
+/* Estilização do botão central */
+.container button{
+    width: 200px;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #3F0071;
+}
+.container button a{
+    color: white;
+    text-decoration: none;
+}
+.Usofloat{
+    top: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    height: 40vh;
+    background-color: white;
+    margin-left: 80px;
+    border-radius: 20px;
+    box-shadow: 5 5 5 5 rgb(121, 121, 121);
+    
+}
+
+.float1{
+    width:400px;
+    margin-left: 250px;
+    float: left; 
+    margin-top:  30px;
+}
+.float1 button{
+    width: 250px;
+    height: 5vh;
+    border-radius: 10px;
+    background-color:#3F0071;
+  
+}
+.float1 p button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.float2{
+    width:400px;
+    float: right;
+    margin-right: 250px;
+    margin-top: 30px;
+}
+.float2 button{
+    width: 250px;
+    height: 5vh;
+    border-radius: 10px;
+    background-color:#3F0071;
+  
+}
+.float2 p button a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.float1, .float2{
+    margin-top: 10px;
+}
+footer{
+    top: 150%;
+    width: 100%;
+    height: 55vh;
+    clear: both; 
+    position: absolute;
+    background-image: linear-gradient(rgba(95, 66, 134, 0.75), black);
+}
+footer p img{
+
+    width: 50px;
+  
+
+}
+footer nav{
+    margin: 90px;
+}
+footer nav ul li a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+/* Estilização do marcador de um item da lista.Aqui apenas coloquei a cor branca. */
+::marker{
+    color: white;
+}
+footer p{
+    color: white;
+    margin: 0 0 0 20px;
+}
